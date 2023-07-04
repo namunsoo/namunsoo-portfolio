@@ -1,0 +1,68 @@
+.project {
+    text-align: center;
+}
+
+.project .content{
+    width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.project .content tr:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+
+.project .content .title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.project .content .slide{
+    width: 600px;
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.project .content .slide .carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+
+.project .content .slide .carousel-inner .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+
+.project .content .slide .d-block{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project .content .description .subtitle{
+    margin-bottom: 10px;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.project .content .description .detail{
+    width: 60%;
+    min-height: 200px;
+    margin: 10px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+}
+
+.project .content .description .gitUrl{
+    margin-top: 10px;
+    font-size: 10pt;
+}

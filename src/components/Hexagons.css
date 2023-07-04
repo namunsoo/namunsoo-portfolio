@@ -1,0 +1,49 @@
+.hexGroup {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.hexGroup .hex {
+    width: 200px;
+    height: calc(200px*1.7430);
+    margin: 20px;
+    position: relative;
+    overflow: hidden !important;
+    transform: rotate(60deg);
+}
+.hexGroup .hex-inner1 {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    overflow: hidden;
+}
+.hexGroup .hex-inner2 {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    background-position: center center;
+    background-size: contain !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-120deg);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.hexGroup .hex:nth-of-type(n+6) {
+    margin-top: -163px;
+}
+.hexGroup .hex:nth-of-type(9n+6) {
+    margin-left: 140px;
+}
+.hexGroup .hex:nth-of-type(9n+9) {
+    margin-right: 140pxvw;
+}
