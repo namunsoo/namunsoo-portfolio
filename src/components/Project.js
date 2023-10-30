@@ -5,16 +5,20 @@ import ImgSlide from './ImgSlide';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Project.css'
 
-function Project({id, color, title, location, imgs, subtitle, detail, giturl}) {
+function Project({id, color, title, location, imgs, subtitle, detail, gitUrl, etcUrl}) {
     let checkGitHub = () => {
-        if (!(typeof giturl == 'undefined' || giturl == null || giturl === '')) {
+        if (!(typeof gitUrl == 'undefined' || gitUrl == null || gitUrl === '')) {
             return(
-                <div className='gitUrl'><a href={`${giturl}`} onClick={goGitHub}>GitHub</a></div>
+                <div className='url'><a href={`${gitUrl}`} >GitUrl</a></div>
             )
         }
     }
-    let goGitHub = () => {
-        document.location.href=giturl;
+    let checkUrl = () => {
+        if (!(typeof etcUrl == 'undefined' || etcUrl == null || etcUrl === '')) {
+            return(
+                <div className='url'><a href={`${etcUrl}`} >Link</a></div>
+            )
+        }
     }
     return (
         <div className='project'>
@@ -31,6 +35,7 @@ function Project({id, color, title, location, imgs, subtitle, detail, giturl}) {
                             <div className='subtitle'>{subtitle}</div>
                             <div className='detail'>{detail}</div>
                             {checkGitHub()}
+                            {checkUrl()}
                         </td>
                     </tr>
                 </tbody>
@@ -47,7 +52,8 @@ Project.propTypes = {
     imgs: PropTypes.array.isRequired,
     subtitle: PropTypes.string.isRequired,
     detail: PropTypes.string.isRequired,
-    giturl: PropTypes.string
+    gitUrl: PropTypes.string,
+    etcUrl: PropTypes.string
 };
 
 export default Project

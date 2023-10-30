@@ -1,4 +1,6 @@
 .project {
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
 }
 
@@ -18,7 +20,7 @@
 .project .content .title{
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 12pt;
+    font-size: 24pt;
     font-weight: 600;
 }
 
@@ -28,6 +30,10 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
+}
+.project .content .slide .carousel-control-next,
+.project .content .slide .carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
 }
 
 .project .content .slide .carousel-inner{
@@ -43,26 +49,31 @@
 .project .content .slide .d-block{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: 100% 100%;
 }
-
+.project .content .description{
+    margin-left: auto;
+    margin-right: auto;
+}
 .project .content .description .subtitle{
-    margin-bottom: 10px;
-    font-size: 11pt;
+    margin-bottom: 20px;
+    font-size: 16pt;
     font-weight: 600;
+    white-space: pre-wrap;
 }
-
 .project .content .description .detail{
-    width: 60%;
+    width: 80%;
     min-height: 200px;
     margin: 10px auto 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10pt;
+    font-size: 14pt;
+    font-weight: 500;
+    white-space: pre-wrap;
 }
 
-.project .content .description .gitUrl{
+.project .content .description .url{
     margin-top: 10px;
-    font-size: 10pt;
+    font-size: 14pt;
 }

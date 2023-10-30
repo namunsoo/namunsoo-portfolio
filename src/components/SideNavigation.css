@@ -1,0 +1,18 @@
+.sideNav {
+    width: 180px;
+    height: 400px;
+    position: fixed;
+    left: 30px;
+    top: 100px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    opacity:0.8;
+}
+.sideNav #navTitle{
+    height: 50px;
+    text-align : center;
+    line-height : 50px;
+}
+.sideNav .nav-item:hover{
+    background-color: #a0a0a0;
+}

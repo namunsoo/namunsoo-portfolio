@@ -6,7 +6,8 @@ function Hex(location, img, idx) {
     return (
         <div className="hex" key={idx}>
             <div className="hex-inner1">
-                <div className="hex-inner2" style={{backgroundImage: `url(${require(`../${location}${img}`)})`}}>
+                <div className="hex-inner2">
+                    <img className='hex-innerImg' src={require(`../${location}${img}`)} alt="BigCo Inc. logo"/>
                 </div>
             </div>
         </div>
