@@ -25,7 +25,7 @@ const projectList = [
     location: 'assets/images/',
     imgs: ['MyBlog_01.PNG','MyBlog_02.PNG'], 
     subtitle: '개인 공부 및 정보 수집을 위한 블로그', 
-    detail: '버전 및 프로그램 차이가 있을 수 있으며 \n 잘못된 정보가 있을 수 있습니다.',
+    detail: '버전 및 프로그램 차이로인한 문제가 있을 수 있으며 \n 잘못된 정보가 있을 수 있습니다.',
     etcUrl: 'https://namunsoo.tistory.com/'
   }
 ]
